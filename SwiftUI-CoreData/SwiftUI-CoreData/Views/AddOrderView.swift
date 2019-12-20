@@ -24,7 +24,7 @@ struct AddOrderView: View {
           }.pickerStyle(SegmentedPickerStyle())
           
           Button("Place Order") {
-            
+            self.addOrderVM.saveOrder()
           }.padding(8)
             .foregroundColor(Color.white)
             .background(Color.green)
@@ -32,7 +32,7 @@ struct AddOrderView: View {
         }
       }.padding()
       
-        .navigationBarTitle("Add Order", displayMode: .inline)
+        .navigationBarTitle("Add Order", displayMode: .large)
     }
   }
 }

@@ -18,4 +18,17 @@ class CoreDataManager {
   private init(context: NSManagedObjectContext) {
     self.context = context
   }
+  
+  func saveOrder(name: String, type: String) {
+    //let order = O
+    let order = Order(context: self.context)
+    order.name = name
+    order.type = type
+    
+    do {
+      try self.context.save()
+    } catch let error as NSError {
+      print(error)
+    }
+  }
 }

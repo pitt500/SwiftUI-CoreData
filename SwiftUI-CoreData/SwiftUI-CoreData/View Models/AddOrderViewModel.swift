@@ -12,4 +12,8 @@ import SwiftUI
 class AddOrderViewModel {
   var name = ""
   var type = ""
+  
+  func saveOrder() {
+    CoreDataManager.shared.saveOrder(name: name, type: type)
+  }
 }
