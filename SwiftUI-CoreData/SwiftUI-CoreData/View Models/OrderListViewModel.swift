@@ -24,6 +24,11 @@ class OrderListViewModel: ObservableObject {
     print(orders)
   }
   
+  func deleteOrder(_ orderVM: OrderViewModel) {
+    CoreDataManager.shared.deleteOrder(name: orderVM.name)
+    fetchAllOrders()
+  }
+  
 }
 
 class OrderViewModel {

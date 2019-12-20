@@ -19,6 +19,21 @@ class CoreDataManager {
     self.context = context
   }
   
+  private func fetchOrder(name: String) -> Order? {
+    var orders: [Order] = []
+    
+    let request: NSFetchRequest<Order> = Order.fetchRequest()
+    request.predicate = NSPredicate(format: "name == %@", name)
+    
+    do {
+      orders = try self.context.fetch(request)
+    } catch let error as NSError {
+      print(error)
+    }
+    
+    return orders.first
+  }
+  
   func getAllOrders() -> [Order] {
     var orders: [Order] = []
     
@@ -34,7 +49,6 @@ class CoreDataManager {
   }
   
   func saveOrder(name: String, type: String) {
-    //let order = O
     let order = Order(context: self.context)
     order.name = name
     order.type = type
@@ -45,4 +59,16 @@ class CoreDataManager {
       print(error)
     }
   }
+  
+  func deleteOrder(name: String) {
+    do {
+      if let order = fetchOrder(name: name) {
+        self.context.delete(order)
+        try self.context.save()
+      }
+    } catch let error as NSError {
+      print(error)
+    }
+  }
+  
 }
