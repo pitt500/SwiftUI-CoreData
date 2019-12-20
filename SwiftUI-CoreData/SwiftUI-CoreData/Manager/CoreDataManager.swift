@@ -19,6 +19,20 @@ class CoreDataManager {
     self.context = context
   }
   
+  func getAllOrders() -> [Order] {
+    var orders: [Order] = []
+    
+    let orderRequest: NSFetchRequest<Order> = Order.fetchRequest()
+    
+    do {
+      orders = try self.context.fetch(orderRequest)
+    } catch let error as NSError {
+      print(error)
+    }
+    
+    return orders
+  }
+  
   func saveOrder(name: String, type: String) {
     //let order = O
     let order = Order(context: self.context)

@@ -18,6 +18,7 @@
 		B5D8CEF123AC50B7007EF698 /* NSManagedObjectContext+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D8CEF023AC50B7007EF698 /* NSManagedObjectContext+Extensions.swift */; };
 		B5D8CEF423AC5178007EF698 /* AddOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D8CEF323AC5178007EF698 /* AddOrderViewModel.swift */; };
 		B5D8CEF723AC51B8007EF698 /* AddOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D8CEF623AC51B8007EF698 /* AddOrderView.swift */; };
+		B5F02B3123ACAAB700FFF398 /* OrderListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F02B3023ACAAB700FFF398 /* OrderListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		B5D8CEF023AC50B7007EF698 /* NSManagedObjectContext+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Extensions.swift"; sourceTree = "<group>"; };
 		B5D8CEF323AC5178007EF698 /* AddOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderViewModel.swift; sourceTree = "<group>"; };
 		B5D8CEF623AC51B8007EF698 /* AddOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderView.swift; sourceTree = "<group>"; };
+		B5F02B3023ACAAB700FFF398 /* OrderListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				B5D8CEF323AC5178007EF698 /* AddOrderViewModel.swift */,
+				B5F02B3023ACAAB700FFF398 /* OrderListViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 				B5D8CED623AC4E3A007EF698 /* AppDelegate.swift in Sources */,
 				B5D8CED823AC4E3A007EF698 /* SceneDelegate.swift in Sources */,
 				B5D8CEDD23AC4E3A007EF698 /* ContentView.swift in Sources */,
+				B5F02B3123ACAAB700FFF398 /* OrderListViewModel.swift in Sources */,
 				B5D8CEEE23AC4F5C007EF698 /* CoreDataManager.swift in Sources */,
 				B5D8CEDB23AC4E3A007EF698 /* SwiftUI_CoreData.xcdatamodeld in Sources */,
 				B5D8CEF723AC51B8007EF698 /* AddOrderView.swift in Sources */,
