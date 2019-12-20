@@ -72,7 +72,6 @@
 				B5D8CEEC23AC4F4B007EF698 /* Manager */,
 				B5D8CED523AC4E3A007EF698 /* AppDelegate.swift */,
 				B5D8CED723AC4E3A007EF698 /* SceneDelegate.swift */,
-				B5D8CEDC23AC4E3A007EF698 /* ContentView.swift */,
 				B5D8CEDE23AC4E3B007EF698 /* Assets.xcassets */,
 				B5D8CEE323AC4E3B007EF698 /* LaunchScreen.storyboard */,
 				B5D8CEE623AC4E3B007EF698 /* Info.plist */,
@@ -118,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				B5D8CEF623AC51B8007EF698 /* AddOrderView.swift */,
+				B5D8CEDC23AC4E3A007EF698 /* ContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
