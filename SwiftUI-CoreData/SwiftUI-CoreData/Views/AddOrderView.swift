@@ -10,6 +10,7 @@ import SwiftUI
 
 struct AddOrderView: View {
   
+  @Binding var isPresented: Bool
   @State var addOrderVM = AddOrderViewModel()
   
   var body: some View {
@@ -25,6 +26,7 @@ struct AddOrderView: View {
           
           Button("Place Order") {
             self.addOrderVM.saveOrder()
+            self.isPresented = false
           }.padding(8)
             .foregroundColor(Color.white)
             .background(Color.green)
@@ -39,6 +41,6 @@ struct AddOrderView: View {
 
 struct AddOrderView_Previews: PreviewProvider {
   static var previews: some View {
-    AddOrderView()
+    AddOrderView(isPresented: .constant(false))
   }
 }
